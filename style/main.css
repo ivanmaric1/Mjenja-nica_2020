@@ -2,6 +2,7 @@ body {
     height: 100vh;
     background: url(/img/pozadina.jpg) no-repeat center center/cover;
     overflow: hidden;
+    font-family: sans-serif;
 }
 
 .container {
@@ -10,4 +11,49 @@ body {
     height: 800px;
     margin: 50px auto;
     box-shadow: 0px 0px 10px 2px #c6c8db;
+    border: 1px solid #c6c8db;
+    display: grid;
+    grid-template-rows: 8% auto;
+    grid-template-columns: 15% auto;              
 }
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #c6c8db;
+}
+
+.logo{
+    margin: 5rem 1rem 3rem 1rem;
+    width: 80%;
+}
+
+.navbar {
+    background: #2e4492;
+    grid-row: 1/span2;
+    border-top-right-radius: 90px;
+}
+
+.header {
+    font-size: 1.3rem;
+    margin-left: 5rem;
+    padding-left: 3rem;
+    border: 1px solid #c6c8db;
+    border-bottom-left-radius: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 1.3rem;
+}
+
+.navbar ul li {
+    margin-bottom: 1rem;
+}
+
+.current {
+    color: #ff6b37;
+}
+
+
+
