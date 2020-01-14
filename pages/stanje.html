@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Mjenjačnica | 2020</title>
+</head>
+<body>
+    <div class="container">
+       
+        <nav class='navbar'>
+            <section>
+                <img src="/img/logo.png"  class='logo' alt="Vreća novaca">
+            </section>
+            <ul>
+                <li class='current'><a href="/index.html">Kupnja</a></li>
+                <li><a href="prodaja.html">Prodaja</a></li>
+                <li><a href="tecajna.html">Tečajna lista</a></li>
+                <li><a href="stanje.html">Stanje blagajne</a></li>
+            </ul>
+        </nav>
+
+        <header class='header'>
+            <p>Mjenjačnica 2020 &#8680 Stanje blagajne</p>
+        </header>
+         
+        <main class='main'>
+            <section class="stanjeBlagajne">
+                <table>
+                    <tr>
+                        <th>Valuta</th>
+                        <th>Iznos</th>
+                    </tr>
+                    <tr>
+                        <td>Hrvatska kuna (HRK)</td>
+                        <td id='kune'>5600</td>
+                    </tr>
+                    <tr>
+                        <td>Euro (EUR)</td>
+                        <td id='euri'>5600 </td>
+                    </tr>
+                    <tr>
+                        <td>Engleska funta (GPB)</td>
+                        <td id='funte'>5600</td>
+                    </tr>
+                    <tr>
+                        <td>Američki dolari (USD)</td>
+                        <td id='dolari'>5600</td>
+                    </tr>
+                    <tr>
+                        <td>Švicarski franci (CHF)</td>
+                        <td id='franci'>5600</td>
+                    </tr>
+                </table>
+            </section>
+            <section class='stanjeFunckionalnost'>
+                <label for="postavkaKapitala">Postavi početni kapital :
+                    <input type="text" id='postavkaKapitala'>
+                    <button type="submit" class='gumb'>Unesi</button>
+                </label>
+                <label for="unosKapitala">Dodaj kapital u blagajnu :
+                    <input type="text" id='unosKapitala'>
+                    <button type="submit" class='gumb'>Unesi</button>
+                </label>
+            </section>
+            <section class='reset'>
+                <label for="reset">
+                    <button type='reset' class='reset'>Resetiraj stanje blagajne</button>
+                </label>
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
