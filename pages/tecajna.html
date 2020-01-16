@@ -15,7 +15,7 @@
                 <img src="/img/logo.png"  class='logo' alt="Vreća novaca">
             </section>
             <ul>
-                <li class='current'><a href="/index.html">Kupnja</a></li>
+                <li><a href="/index.html">Kupnja</a></li>
                 <li><a href="prodaja.html">Prodaja</a></li>
                 <li><a href="tecajna.html">Tečajna lista</a></li>
                 <li><a href="stanje.html">Stanje blagajne</a></li>
@@ -23,54 +23,40 @@
         </nav>
 
         <header class='header'>
-            <p>Mjenjačnica 2020 &#8680 Stanje blagajne</p>
+            <p>Mjenjačnica 2020 &#8680 Tečajna lista</p>
         </header>
          
-        <main class='main'>
-            <section class="stanjeBlagajne">
+        <main class='mainKupnja'>
+            <form class="tecajnaLista">
                 <table>
                     <tr>
                         <th>Valuta</th>
-                        <th>Iznos</th>
-                    </tr>
-                    <tr>
-                        <td>Hrvatska kuna (HRK)</td>
-                        <td id='kune'>5600</td>
+                        <th>Kupovni</th>
+                        <th>Prodajni</th>
                     </tr>
                     <tr>
                         <td>Euro (EUR)</td>
-                        <td id='euri'>5600 </td>
+                        <td><input type="text" id='KupovniEuri'></td>
+                        <td><input type="text" id='ProdajniEuri'></td>
                     </tr>
                     <tr>
                         <td>Engleska funta (GPB)</td>
-                        <td id='funte'>5600</td>
+                        <td><input type="text" id='KupovniFunta'></td>
+                        <td><input type="text" id='ProdajniFunta'></td>
                     </tr>
                     <tr>
                         <td>Američki dolari (USD)</td>
-                        <td id='dolari'>5600</td>
+                        <td><input type="text" id='KupovniDolari'></td>
+                        <td><input type="text" id='ProdajniDolari'></td>
                     </tr>
                     <tr>
                         <td>Švicarski franci (CHF)</td>
-                        <td id='franci'>5600</td>
+                        <td><input type="text" id='KupovniFranci'></td>
+                        <td><input type="text" id='ProdajniFranci'></td>
                     </tr>
                 </table>
-            </section>
-            <section class='stanjeFunkcionalnost'>
-                <label for="postavkaKapitala">Postavi početni kapital :
-                    <input type="text" id='postavkaKapitala'>
-                    <button type="submit" class='gumb'>Unesi</button>
-                </label>
-                <label for="unosKapitala">Dodaj kapital u blagajnu :
-                    <input type="text" id='unosKapitala'>
-                    <button type="submit" class='gumb'>Unesi</button>
-                </label>
-            </section>
-            <section>
-                <label for="reset">
-                    <button type='reset' class='reset'>Resetiraj stanje blagajne</button>
-                </label>
-            </section>
-            
+                <button type='submit' id='upisListe'>Upiši tečajnu listu za današnji dan</button>
+            </form>
         </main>
     </div>
 </body>

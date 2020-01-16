@@ -15,7 +15,7 @@
                 <img src="./img/logo.png"  class='logo' alt="Vreća novaca">
             </section>
             <ul>
-                <li class='current'><a href="pages/kupnja.html">Kupnja</a></li>
+                <li><a href="/index.html">Kupnja</a></li>
                 <li><a href="pages/prodaja.html">Prodaja</a></li>
                 <li><a href="pages/tecajna.html">Tečajna lista</a></li>
                 <li><a href="pages/stanje.html">Stanje blagajne</a></li>
@@ -26,34 +26,21 @@
             <p>Mjenjačnica 2020 &#8680 Kupnja deviza</p>
         </header>
          
-        <main class='main'>
-            <section class="stanjeBlagajne">
-                <table>
-                    <tr>
-                        <th>Valuta</th>
-                        <th>Iznos</th>
-                    </tr>
-                    <tr>
-                        <td>Hrvatska kuna</td>
-                        <td id='kune'>5600</td>
-                    </tr>
-                    <tr>
-                        <td>Euro</td>
-                        <td id='euri'>5600</td>
-                    </tr>
-                    <tr>
-                        <td>Engleska funta</td>
-                        <td id='funte'>5600</td>
-                    </tr>
-                    <tr>
-                        <td>Američki dolari</td>
-                        <td id='dolari'>5600</td>
-                    </tr>
-                    <tr>
-                        <td>Švicarski franci</td>
-                        <td id='franci'>5600</td>
-                    </tr>
-                </table>
+        <main class='mainKupnja'>
+            <section class='kupnja'>
+                <label for="iznosPromjene">Upiši iznos
+                    <input type="text">
+                </label>
+                <select name="izborValute" id="izborValute">
+                    <option value="eur">Euro</option>
+                    <option value="eur">Engleska funta</option>
+                    <option value="eur">Američki dolar</option>
+                    <option value="eur">Švicarski franak</option>
+                </select>
+                <button type="submit" class='kupi'>Kupi</button>
+            </section>
+            <section >
+                <div class="kupnjaOutput"></div>
             </section>
         </main>
     </div>

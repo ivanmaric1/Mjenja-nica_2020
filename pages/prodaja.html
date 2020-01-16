@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Mjenjačnica | 2020</title>
+</head>
+<body>
+    <div class="container">
+       
+        <nav class='navbar'>
+            <section>
+                <img src="/img/logo.png"  class='logo' alt="Vreća novaca">
+            </section>
+            <ul>
+                <li><a href="/index.html">Kupnja</a></li>
+                <li><a href="prodaja.html">Prodaja</a></li>
+                <li><a href="tecajna.html">Tečajna lista</a></li>
+                <li><a href="stanje.html">Stanje blagajne</a></li>
+            </ul>
+        </nav>
+
+        <header class='header'>
+            <p>Mjenjačnica 2020 &#8680 Prodaja deviza</p>
+        </header>
+         
+        <main class='mainKupnja'>
+            <section class='kupnja'>
+                <label for="iznosPromjene">Upiši iznos
+                    <input type="text">
+                </label>
+                <select name="izborValute" id="izborValute">
+                    <option value="eur">Euro</option>
+                    <option value="eur">Engleska funta</option>
+                    <option value="eur">Američki dolar</option>
+                    <option value="eur">Švicarski franak</option>
+                </select>
+                <button type="submit" class='kupi'>Prodaj</button>
+            </section>
+            <section >
+                <div class="kupnjaOutput"></div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
