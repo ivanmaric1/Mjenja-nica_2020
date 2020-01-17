@@ -15,18 +15,19 @@
                 <img src="/img/logo.png"  class='logo' alt="Vreća novaca">
             </section>
             <ul>
+                <li><a href="/index.html">Početna</a></li>
                 <li class='current'><a href="/index.html">Kupnja</a></li>
                 <li><a href="prodaja.html">Prodaja</a></li>
                 <li><a href="tecajna.html">Tečajna lista</a></li>
                 <li><a href="stanje.html">Stanje blagajne</a></li>
             </ul>
         </nav>
-
+        
         <header class='header'>
             <p>Mjenjačnica 2020 &#8680 Stanje blagajne</p>
         </header>
          
-        <main class='main'>
+        <main class='mainStanje'>
             <section class="stanjeBlagajne">
                 <table>
                     <tr>
@@ -35,43 +36,39 @@
                     </tr>
                     <tr>
                         <td>Hrvatska kuna (HRK)</td>
-                        <td id='kune'>5600</td>
+                        <td id='kune'></td>
                     </tr>
                     <tr>
                         <td>Euro (EUR)</td>
-                        <td id='euri'>5600 </td>
+                        <td id='euri'></td>
                     </tr>
                     <tr>
                         <td>Engleska funta (GPB)</td>
-                        <td id='funte'>5600</td>
+                        <td id='funte'></td>
                     </tr>
                     <tr>
                         <td>Američki dolari (USD)</td>
-                        <td id='dolari'>5600</td>
+                        <td id='dolari'></td>
                     </tr>
                     <tr>
                         <td>Švicarski franci (CHF)</td>
-                        <td id='franci'>5600</td>
+                        <td id='franci'></td>
                     </tr>
                 </table>
             </section>
             <section class='stanjeFunkcionalnost'>
-                <label for="postavkaKapitala">Postavi početni kapital :
-                    <input type="text" id='postavkaKapitala'>
-                    <button type="submit" class='gumb'>Unesi</button>
+                <label for="postavljanjeKapitala">Dodaj kapital u blagajnu (HRK):
+                    <input type="text" id='iznosKapitala'>
+                    <button type="submit" class='gumb' id='postavljanjeKapitala'>Unesi</button>
                 </label>
-                <label for="unosKapitala">Dodaj kapital u blagajnu :
-                    <input type="text" id='unosKapitala'>
-                    <button type="submit" class='gumb'>Unesi</button>
-                </label>
-            </section>
-            <section>
-                <label for="reset">
-                    <button type='reset' class='reset'>Resetiraj stanje blagajne</button>
+                <label for="reset">Poništi stanje blagajne :
+                    <button type="reset" class='reset' id='resetKapitala'>Poništi</button>
                 </label>
             </section>
+    
             
         </main>
     </div>
+<script src='/program.js'></script>
 </body>
 </html>

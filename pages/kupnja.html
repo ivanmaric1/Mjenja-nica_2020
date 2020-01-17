@@ -16,35 +16,35 @@
             </section>
             <ul>
                 <li><a href="/index.html">Početna</a></li>
-                <li><a href="/index.html">Kupnja</a></li>
-                <li><a href="prodaja.html">Prodaja</a></li>
-                <li><a href="tecajna.html">Tečajna lista</a></li>
-                <li><a href="stanje.html">Stanje blagajne</a></li>
+                <li><a href="/pages/kupnja.html">Kupnja</a></li>
+                <li><a href="/pages/prodaja.html">Prodaja</a></li>
+                <li><a href="/pages/tecajna.html">Tečajna lista</a></li>
+                <li><a href="/pages/stanje.html">Stanje blagajne</a></li>
             </ul>
         </nav>
 
         <header class='header'>
-            <p>Mjenjačnica 2020 &#8680 Prodaja deviza</p>
+            <p>Mjenjačnica 2020 &#8680 Kupnja deviza</p>
         </header>
          
         <main class='mainKupnja'>
             <section class='kupnja'>
                 <label for="iznosPromjene">Upiši iznos
-                    <input type="text" id='iznosProdaje'>
+                    <input type="text" id='iznosKupnje'>
                 </label>
-                <select name="izborValute" id="izborValutep">
+                <select name="izborValute" id="izborValutek">
                     <option value="euro">Euro</option>
                     <option value="funta">Engleska funta</option>
                     <option value="dolar">Američki dolar</option>
                     <option value="franak">Švicarski franak</option>
                 </select>
-                <button type="submit" class='kupi' id='prodajDevize'>Prodaj</button>
+                <button type="submit" class='kupi' id='kupiDevize'>Kupi</button>
             </section>
             <section >
-                <div id="prodajaOutput"></div>
+                <div id="kupnjaOutput"></div>
             </section>
         </main>
     </div>
-<script src='/prodaja.js'></script>
+<script src='/kupnja.js'></script>
 </body>
 </html>

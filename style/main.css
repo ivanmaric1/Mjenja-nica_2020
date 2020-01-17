@@ -56,7 +56,7 @@ body {
     color: #ff6b37;
 }
 
-.main {
+.main, .homePage,.mainStanje {
     justify-self: center;
     align-self: center;
     background-color: white;
@@ -71,19 +71,25 @@ body {
     font-size: 1.5rem;
 }
 
+.homePage {
+    background: url(/img/valute.jpg) no-repeat center center/cover;
+}
+
+.mainStanje {
+    background: url(/img/novcici.jpg) no-repeat bottom center/cover;
+}
+
 .stanjeBlagajne table th {
     border-bottom: 3px solid #2e4492;
 }
 
 
-.stanjeBlagajne table td{
-    border-bottom: 1px solid #2e4492;
-}
+
 
 .stanjeFunkcionalnost {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-evenly;
     text-align: center;
     border: 1px solid #2e4492;
@@ -94,6 +100,10 @@ body {
     margin: 1rem;
     width: 20%;
     font-size: 1.5rem;
+}
+
+.stanjeFunkcionalnost .reset {
+    margin: 1rem;
 }
 
 .gumb, .reset {
@@ -126,7 +136,7 @@ body {
 }
  .mainKupnja input {
      font-size: 1.6rem;
-     width: 145px;
+     width: 200px;
      margin-bottom: 1rem;
  }
 
@@ -140,7 +150,8 @@ body {
 }
 
 .kupi {
-    font-size: 1.6rem;
+    margin-left: 20px;
+    font-size: 1.8rem;
     display: inline-block;
 }
 
@@ -160,4 +171,10 @@ body {
 #upisListe:hover {
     color: white;
     background-color: #2e4492;
+}
+
+#kupnjaOutput, #prodajaOutput {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
