@@ -5,6 +5,9 @@ document.getElementById('kupiDevize').addEventListener('click', function(e) {
     
     document.getElementById("kupnjaOutput").style.color = "red";
     if(izbor === 'euro') {
+        let sef = localStorage.getItem('euri')
+        let zbroj = sef + iznos
+        localStorage.setItem('euri',zbroj)
         let Ek = localStorage.getItem('kupovniEuri')
         let ispis = document.createElement('h1')
         ispis.textContent = `Kupili ste ${iznos} Eura.

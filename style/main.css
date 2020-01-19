@@ -30,15 +30,14 @@ body {
 .navbar {
     background: #2e4492;
     grid-row: 1/span2;
-    border-top-right-radius: 90px;
+   
 }
 
 .header {
     font-size: 1.3rem;
     margin-left: 5rem;
     padding-left: 3rem;
-    border: 1px solid #c6c8db;
-    border-bottom-left-radius: 40px;
+    border: 2px solid #c6c8db;
     color: #2e4492;
 }
 
@@ -62,8 +61,7 @@ body {
     background-color: white;
     width: 85%;
     height: 85%;
-    border: 1px solid #c6c8db;
-    border-radius: 50px;
+    border: 2px solid #c6c8db;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -71,9 +69,7 @@ body {
     font-size: 1.5rem;
 }
 
-.homePage {
-    background: url(/img/valute.jpg) no-repeat center center/cover;
-}
+
 
 .mainStanje {
     background: url(/img/novcici.jpg) no-repeat bottom center/cover;
@@ -82,9 +78,6 @@ body {
 .stanjeBlagajne table th {
     border-bottom: 3px solid #2e4492;
 }
-
-
-
 
 .stanjeFunkcionalnost {
     display: flex;
@@ -125,8 +118,7 @@ body {
     background-color: white;
     width: 85%;
     height: 85%;
-    border: 1px solid #c6c8db;
-    border-radius: 50px;
+    border: 2px solid #c6c8db;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -177,4 +169,31 @@ body {
     text-align: center;
     width: 80%;
     margin: 0 auto;
+}
+
+#razmjenaNovaca {
+    width: 250px;
+}
+
+#upute {
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#upute div {
+    padding: 2rem;
+}
+
+.linkovi a{
+    text-decoration: none;
+}
+
+.linkovi {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.linkovi:hover {
+    background-color: #efe5e6;
 }
