@@ -13,8 +13,8 @@ body {
     box-shadow: 0px 0px 10px 2px #c6c8db;
     border: 1px solid #c6c8db;
     display: grid;
-    grid-template-rows: 1fr 12fr;
-    grid-template-columns: 15% auto;              
+    grid-template-rows: 1fr 11fr;
+    grid-template-columns: 17% auto;              
 }
 
 .navbar ul li a {
@@ -69,10 +69,8 @@ body {
     font-size: 1.5rem;
 }
 
-
-
 .mainStanje {
-    background: url(/img/novcici.jpg) no-repeat bottom center/cover;
+    background: url(/img/zlatnici.jpg) no-repeat bottom center/cover;
 }
 
 .stanjeBlagajne table th {
@@ -124,7 +122,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.5rem;
-    background: url(/img/money.jpg) no-repeat left center/cover;
+    background: url(/img/xs.jpg) no-repeat center center/cover;
 }
  .mainKupnja input {
      font-size: 1.6rem;
@@ -197,3 +195,9 @@ body {
 .linkovi:hover {
     background-color: #efe5e6;
 }
+
+.trenutni {
+    border-left: 10px solid #efe5e6;
+    padding-left: 1rem;
+}
+
