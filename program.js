@@ -4,22 +4,22 @@ window.addEventListener('DOMContentLoaded', function(e) {
     kune.textContent = kapital
     document.getElementById('kune').appendChild(kune)
 
-    let kapitalE = localStorage.getItem('kapitalE')
+    let kapitalE = localStorage.getItem('euri')
     let euri = document.createElement('td')
     euri.textContent = kapitalE
     document.getElementById('euri').appendChild(euri)
 
-    let kapitalF = localStorage.getItem('kapitalF')
+    let kapitalF = localStorage.getItem('funte')
     let funte = document.createElement('td')
     funte.textContent = kapitalF
     document.getElementById('funte').appendChild(funte)
 
-    let kapitalD = localStorage.getItem('kapitalD')
+    let kapitalD = localStorage.getItem('dolari')
     let dolari = document.createElement('td')
     dolari.textContent = kapitalD
     document.getElementById('dolari').appendChild(dolari)
 
-    let kapitalFr = localStorage.getItem('kapitalF')
+    let kapitalFr = localStorage.getItem('franci')
     let franci = document.createElement('td')
     franci.textContent = kapitalFr
     document.getElementById('franci').appendChild(franci)
