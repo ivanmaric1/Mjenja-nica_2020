@@ -28,7 +28,7 @@ body {
 }
 
 .navbar {
-    background: #2e4492;
+    background: #17349c;
     grid-row: 1/span2;
    
 }
@@ -84,7 +84,6 @@ body {
     justify-content: space-evenly;
     text-align: center;
     border: 1px solid #2e4492;
-    border-radius: 30px;
 }
 
 .stanjeFunkcionalnost input {
